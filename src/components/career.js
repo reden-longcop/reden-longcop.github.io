@@ -11,16 +11,16 @@ const Timeline = () => {
         },
         {
             direction: 'direction-r',
-            flag: 'Junior QA Engineer',
+            flag: 'Jr QA Engineer',
             position: 'IT Americano Inc.',
             time: '2023 - 2024',
             description: 'I was hired by the same company, where my tasks include creating automation scripts using Python for key project features. My daily work also involves writing and executing test cases and verifying bugs.'
         },
         {
             direction: 'direction-l',
-            flag: 'Functional QA Intern',
+            flag: 'QA Intern',
             position: 'IT Americano Inc.',
-            time: 'March 2023 - June 2023',
+            time: 'March - June 2023',
             description: 'During my internship, I learned extensively about Quality Assurance and enjoyed working with Robot Framework under my QA Lead\'s supervision.'
         },
         {

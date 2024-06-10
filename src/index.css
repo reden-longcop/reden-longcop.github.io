@@ -28,6 +28,11 @@
     --profilePositon: 50%;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
   background-color: var(--primaryBackground);
 }
@@ -192,11 +197,42 @@ body {
   }
 }
 
+#skills > .tools-set{
+  padding: 10px;
+  width: 100%;
+}
+
+#skills > .tools-set img{
+  height: 50px;
+  max-width: auto;
+}
+
+#skills .knowledge .each{
+  border-radius: 5px;
+  /* border: 1px solid red; */
+  padding: 4px;
+}
+
+#skills .knowledge .each:first-child, #skills .knowledge .each:last-child{
+  background-color: var(--secondaryBackground);
+}
+
+#skills .knowledge h3{
+  color: var(--primaryFontColor);
+  font-size: smaller;
+}
+
+#skills .knowledge p{
+  color: var(--secondaryFontColor);
+  margin-bottom: 5px;
+  font-size: smaller;
+}
+
 .timeline {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
-  top: 100%;
-  height: 90vh;
+  top: 140%;
+  height: 60vh;
   left: 50%;
   transform: translateX(-50%);
   width: 660px;
@@ -265,7 +301,6 @@ body {
   background: rgb(248,248,248);
   padding: 6px 10px;
   border-radius: 5px;
-  
   font-weight: 600;
   text-align: left;
 }
@@ -347,6 +382,10 @@ body {
 
 .desc > .position {
   color: var(--primaryFontColor);
+}
+
+.desc > .des{
+  display: none;
 }
 
 .desc > .time, .desc > .des{

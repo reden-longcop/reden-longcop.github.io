@@ -1,4 +1,9 @@
 import React from 'react';
+import jira from '../images/icons/jira.png';
+import git from '../images/icons/git.png';
+import postman from '../images/icons/postman.png';
+import jmeter from '../images/icons/jmeter.png';
+import lambda from '../images/icons/lambda.png';
 
 const Skills = () => {
     const skillSets = [
@@ -23,6 +28,8 @@ const Skills = () => {
             ]
         }
     ];
+
+
     return (
         <div id="skills" className="flex flex-col items-center">
             <h2 className="md:text-4xl text-xl m-4">SKILLS</h2>
@@ -32,16 +39,16 @@ const Skills = () => {
                 ))}
             </div>
             <h2 className="md:text-4xl text-xl m-4">TOOLS</h2>
-            <div className='tools-set'>
-                <div className='tools'>
-                    
-                </div>
+            <div className="tools-set grid grid-cols-5 gap-4">
+                <img src={jira} alt="jira" />
+                <img src={git} alt="git" />
+                <img src={postman} alt="postman" />
+                <img className="col-span-2" src={jmeter} alt="jmeter" />
+                <img className="col-span-5" src={lambda} alt="lambda" />
             </div>
-            <h2 className="md:text-4xl text-xl m-4">KNOWLEDGE</h2>
-            <div className=''></div>
         </div>
     );
-};   
+};
 
 const SkillSet = ({ skills }) => {
     return (
@@ -57,6 +64,5 @@ const SkillSet = ({ skills }) => {
         </div>
     );
 };
-
 
 export default Skills;
