@@ -1,13 +1,358 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: var(--primaryFont);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme('borderColor.DEFAULT', currentColor);
+}
+
+:root{
+    --primaryBackground: #212a38;
+    --secondaryBackground: #2a3547;
+    --primaryFont: 'Poppins', sans-serif;
+    --primaryFontColor: #f5cfbf;
+    --secondaryFontColor: #aaaaaa;
+    --altFontColor: #fff;
+    --profilePositon: 50%;
+}
+
+body {
+  background-color: var(--primaryBackground);
+}
+
+.HEADER{
+  color: var(--primaryFontColor);
+}
+
+.PROFILE{
+  width: 100%;
+  background-color: var(--secondaryBackground);
+  height: auto;
+  padding: 10px 10px;
+  /* padding: 50px; tablet to laptop */
+  /* display: flex; table to  laptop*/
+}
+
+.PROFILE > .left h1{
+  color: var(--primaryFontColor);
+  font-family: var(--primaryFont);
+}
+
+.PROFILE .icon{
+  margin-top: 20px;
+  /* margin-top: 50px; tablet to laptop*/
+}
+
+.PROFILE > .aside{
+  color: var(--secondaryFontColor);
+  position: relative;
+  right: 0%;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  width: auto;
+}
+
+.PROFILE > .aside .introduction a{
+  color: var(--primaryFontColor);
+}
+
+.PROFILE > .aside .introduction p{
+  margin-bottom: 20px;
+}
+
+.PROFILE > .aside .introduction h5{
+  margin: 20px 0 10px 0;
+}
+
+.PROFILE > .aside .introduction h3{
+  color: var(--primaryFontColor);
+  margin-bottom: 10px;
+}
+
+@keyframes iconss{
+  0% {left: -40%;}
+  100% {left: 0%;}
+}
+
+@keyframes profile{
+  0% {left: -50%;}
+  100% {left: var(--profilePositon);}
+}
+
+@keyframes intro-text{
+  0% {right: -30%;}
+  100% {right: 0%;}
+}
+
+.PROFILE > .aside{
+  animation-name: intro-text;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.PROFILE > .left{
+  position: relative;
+  animation-name: iconss;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.PROFILE > .profilePic{
+  position: absolute;
+  right: 0%;
+  left: var(--profilePositon);
+  transform: translateX(-50%);
+  margin-top: 3.5%;
+  z-index: 0;
+  animation-name: profile;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  visibility: hidden;
+}
+
+.PROFILE > .profilePic > img{
+  height: 400px;
+  width: auto;
+  filter: drop-shadow(-4px 4px 8px rgba(0, 0, 0, .3));
+}
+
+#skills {
+  width: 100%;
+  background-color: var(--primaryBackground);
+  height: 50vh;
+  position: absolute;
+  z-index: 999;
+  /* padding: 50px; */
+  /* border: 1px solid red; */
+}
+
+#skills > *{
+  /* border: 1px solid red; */
+}
+
+#skills h2{
+  color: var(--primaryFontColor);
+  height: fit-content;
+}
+
+#skills .sets {
+  width: 100%;
+}
+
+#skills .set {
+  margin: 10px;
+  width: 160px;
+}
+
+#skills .skills {
+  border-radius: 5px;
+  height: 20px;
+  background: var(--secondaryBackground);
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden; 
+}
+
+#skills .skill-bar {
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--secondaryFontColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  animation: grow 2s forwards;
+}
+
+#skills label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--secondaryFontColor);
+}
+
+@keyframes grow {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+.timeline {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  height: 90vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+  margin-left: -4px;
+}
+
+
+.direction-r {
+  position: relative;
+  width: 300px;
+  float: right;
+  margin-right: -4px;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+  
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.desc > .position {
+  color: var(--primaryFontColor);
+}
+
+.desc > .time, .desc > .des{
+  color: var(--secondaryFontColor);
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
 }
