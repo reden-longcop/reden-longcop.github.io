@@ -24,6 +24,7 @@
     --primaryFont: 'Poppins', sans-serif;
     --primaryFontColor: #f5cfbf;
     --secondaryFontColor: #aaaaaa;
+    --altsecondaryFontColor: #999999;
     --altFontColor: #fff;
     --profilePositon: 50%;
 }
@@ -394,4 +395,47 @@ body {
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+}
+
+#project {
+  position: absolute;
+  top: 200%;
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#project h2{
+  color: var(--primaryFontColor);
+  text-align: center;
+}
+
+#project label{
+  color: var(--secondaryFontColor);
+  font-weight: 10;
+}
+
+#project p{
+  color: var(--altsecondaryFontColor);
+  font-size: 11px;
+}
+
+#project .per-projects{
+  border-radius: 5px;
+  background-color: var(--secondaryBackground);
+}
+
+/* #project .per-projects:nth-child(odd){
+  background-color: var(--secondaryBackground);
+} */
+
+#project .cursor-pointer{
+  /* border: 1px solid red; */
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#project .description{
+  padding: 5px;
+  background-color: var(--primaryBackground);
 }

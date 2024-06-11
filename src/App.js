@@ -2,6 +2,7 @@ import Header from './components/headers'
 import Profile from './components/profile'
 import Skills from './components/skills'
 import Timeline from './components/career'
+import Projects from './components/projects'
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Profile />
       <Skills />
       <Timeline />
+      <Projects />
     </div>
   );
 }
