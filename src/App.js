@@ -3,16 +3,30 @@ import Profile from './components/profile'
 import Skills from './components/skills'
 import Timeline from './components/career'
 import Projects from './components/projects'
+import Contact from './components/contact'
+import useIsVisible from './components/useIsVisible'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Profile />
-      <Skills />
-      <Timeline />
-      <Projects />
+      <section id='profile'>
+        <Profile />
+      </section>
+      <section id='skills'>
+        <Skills />
+      </section>
+      <section id='timeline'>
+        <Timeline />
+      </section>
+      <section id='projects'>
+        <Projects />
+      </section>
+      <section id='contact'>
+        <Contact />
+      </section>
     </div>
   );
 }
