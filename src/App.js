@@ -4,7 +4,6 @@ import Skills from './components/skills'
 import Timeline from './components/career'
 import Projects from './components/projects'
 import Contact from './components/contact'
-import useIsVisible from './components/useIsVisible'
 
 import './App.css';
 
