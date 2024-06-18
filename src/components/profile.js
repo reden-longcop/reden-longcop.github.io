@@ -33,7 +33,7 @@ function Profile() {
             >
                 <h1 className="md:text-8xl text-5xl">REDEN LONGCOP</h1>
                 <h3>QA Engineer | Frontend Developer</h3>
-                <div className="icons md:space-x-6 sm:space-x-2">
+                <div className="icons md:space-x-6 space-x-3">
                     <a href={linkedin_link} className="icon-link"><FontAwesomeIcon className="linkedin icon" icon={faLinkedin} /></a>
                     <a href={github_link} className="icon-link"><FontAwesomeIcon className="github icon" icon={faGithub} /></a>
                     <a href={emailto_link} className="icon-link"><FontAwesomeIcon className="email icon" icon={faEnvelope} /></a>

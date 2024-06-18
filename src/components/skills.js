@@ -57,20 +57,15 @@ const Skills = () => {
                 </div>
             </div>
             <div className='skills-con-2'>
-                {/* <h2 className={`md:text-4xl text-xl m-4 ${isVisible ? 'visible' : 'invisible'}`}
-                    style={{
-                        opacity: isVisible ? 1 : 0,
-                        transition: 'opacity 0.5s ease-in-out',
-                        transitionDelay: isVisible ? '0.5s' : '0s'
-                    }}
-                >TOOLS</h2> */}
                 <div className="tools-set-con">
                     {toolSets.map((tool) => (
-                        <div key={tool.id} className={`tools-set md:m-5 ${isVisible ? 'fade-in' : 'fade-out'}`}
-                            style={{
-                                opacity: isVisible ? 1 : 0,
-                                transition: 'opacity 0.5s ease-in-out',
-                            }}
+                        <div key={tool.id} className={`tools-set space-x-10 md:m-5 m-3 ${isVisible ? 'fade-in' : 'fade-out'}`}
+                        
+                        style={{
+                            opacity: isVisible ? 1 : 0,
+                            transition: 'opacity 0.5s ease-in-out',
+                            transitionDelay: isVisible ? '0.5s' : '0s'
+                        }}
                         >
                             <label>{tool.label}</label>
                             <FontAwesomeIcon className="tool-icon" icon={tool.icon} />
