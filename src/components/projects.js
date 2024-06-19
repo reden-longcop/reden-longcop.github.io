@@ -65,7 +65,7 @@ const Project = () => {
 
 const ProjectSets = ({ projects }) => {
     return (
-        <div className="projects">
+        <div className="projects lg:grid lg:grid-cols-3">
             {projects.map((project) => (
                 <ProjectItem key={project.id} project={project} />
             ))}
@@ -82,28 +82,29 @@ const ProjectItem = ({ project }) => {
 
     return (
         <li ref={projectRef}>
-        <div className={`per-projects p-3 mb-4 grid grid-cols-3 grid-rows-2 gap-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
-            style={{
-                opacity: isVisible ? 1 : 0,
-                transition: 'opacity 0.5s ease-in-out',
-            }}
-        >
-            <label id={project.id} className="font-bold col-span-2">{project.name}</label>
-            <FontAwesomeIcon
-                icon={isOpen ? faAngleUp : faAngleDown}
-                className="cursor-pointer col-start-3 row-span-2 self-center justify-self-end"
-                onClick={toggleVisibility}
-            />
-            <p className="col-span-2">{project.tools} | {project.feature}</p>
-            {isOpen && (
-                <div className="description col-span-3 mt-2 p-3 grid grid-cols-3">
-                    <p className="col-span-2">{project.caption}</p>
-                    <a href={project.url} className="self-center justify-self-end flex items-center justify-center">
-                        <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link"/>
-                    </a>
-                </div>
-            )}
-        </div>
+            <div className={`per-projects lg:w-80 lg:h-36 md:w-full p-3 mb-4 grid grid-cols-3 grid-rows-2 gap-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
+                style={{
+                    opacity: isVisible ? 1 : 0,
+                    transition: 'opacity 0.5s ease-in-out',
+                }}
+            >
+                <label id={project.id} className="font-bold col-span-2">{project.name}</label>
+                <FontAwesomeIcon
+                    icon={isOpen ? faAngleUp : faAngleDown}
+                    className="cursor-pointer col-start-3 row-span-2 self-center justify-self-end"
+                    onClick={toggleVisibility}
+                />
+                
+                <p className="col-span-2">{project.tools} | {project.feature}</p>
+                {isOpen && (
+                    <div className="description col-span-3 mt-2 p-3 grid grid-cols-3 lg:grid-cols-1 gap-2">
+                        <p className="lg:col-span-2">{project.caption}</p>
+                        <a href={project.url} className="self-center justify-self-end flex items-center justify-center">
+                            <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link"/>
+                        </a>
+                    </div>
+                )}
+            </div>
         </li>
     );
 };

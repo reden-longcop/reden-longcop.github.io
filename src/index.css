@@ -242,11 +242,6 @@ a, li{
   line-height: 1;
 }
 
-#skills  .tools-set img {
-  /* height: 3.125rem; */
-  /* width: auto; */
-}
-
 #skills .knowledge .each {
   border-radius: 0.3125rem;
   padding: 0.25rem;
@@ -516,8 +511,8 @@ a, li{
 }
 
 #project {
-  position: relative; /* Changed to relative to prevent overlap */
-  top: auto; /* Removed the fixed top position */
+  position: relative;
+  top: auto;
   height: auto;
   width: 100%;
   margin-top: 40px;
@@ -545,7 +540,7 @@ a, li{
   border-radius: 5px;
   background-color: var(--secondaryBackground);
   border: 2px solid var(--secondaryFontColor);
-  width: 100%;
+  /* width: 100%; */
 }
 
 #project .cursor-pointer {
@@ -584,7 +579,6 @@ a, li{
 }
 
 #project .description a:hover {
-  /* border: 2px solid white; */
   transition: .2s ease-in-out;
   transform: scale(1.1);
 }
@@ -616,10 +610,6 @@ a, li{
 
 .footer-section ul li {
   margin: 5px 0;
-}
-
-.footer .contact{
-  /* border: 1px solid red; */
 }
 
 .footer-section ul li a:hover {
