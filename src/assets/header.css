@@ -1,0 +1,7 @@
+.HEADER {
+    color: var(--primaryFontColor);
+}
+
+@media screen and (min-width: 1025px){
+    .HEADER { width: 90%; }
+}

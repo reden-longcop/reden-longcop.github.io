@@ -1,0 +1,97 @@
+#skills {
+    width: 100%;
+    background-color: var(--primaryBackground);
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+  
+#skills .skills-con-2{
+    width: 100%;
+    height: 100%;
+}
+  
+#skills .skills-con-2 .tools-set{
+    border: 1px solid var(--altFontColor);
+    background-color: var(--secondaryBackground);
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#skills .skills-con-2 .tools-set .tool-icon{
+    font-size: 2rem;
+    color: var(--altFontColor);
+}
+
+#skills .skills-con-2 .tools-set label{
+    color: var(--secondaryFontColor);
+    text-align: justify;
+}
+
+#skills h2 {
+    color: var(--primaryFontColor);
+}
+  
+#skills .skills {
+    /* border: 1px solid red; */
+    border-radius: 0.3125rem;
+    height: 1.25rem;
+    background-color: var(--secondaryBackground);
+    margin-bottom: 0.625rem;
+    position: relative;
+    overflow: hidden;
+}
+  
+#skills .skill-bar {
+    border-radius: 0.3125rem;
+    height: 100%;
+    background-color: var(--secondaryFontColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    animation: grow 2s forwards;
+}
+  
+@keyframes grow {
+    from { width: 0;}
+    to { width: var(--skillbar-width);}
+}
+  
+#skills label {
+    display: block;
+    margin-bottom: 0.3125rem;
+    color: var(--secondaryFontColor);
+    font-size: 0.875rem;
+}
+  
+#skills  .tools-set {
+    line-height: 1;
+}
+@media screen and (min-width: 769px){
+    #skills{
+        overflow-y: hidden;
+    }
+    #skills h2{
+        width: 100%;
+        height: fit-content;
+    }
+    #skills .skills-con-1{
+        width: 50%;
+        height: auto;
+    }
+    #skills .skills-con-2{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    #skills {
+        width: 90%; 
+        margin: 0 auto;
+    }
+}

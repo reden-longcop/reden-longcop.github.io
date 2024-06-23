@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import useIsVisible from './useIsVisible';
+import '../assets/career.css';
 
 const Timeline = () => {
     const timelineData = [

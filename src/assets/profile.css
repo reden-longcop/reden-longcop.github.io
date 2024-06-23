@@ -1,0 +1,141 @@
+.PROFILE {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondaryBackground);
+    padding: 1rem;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+  
+.PROFILE > .left h1 {
+    color: var(--primaryFontColor);
+}
+  
+.PROFILE > .left > h3{
+    color: var(--primaryFontColor);
+}
+  
+.PROFILE .icon {
+    margin-top: 20px;
+    color: var(--altFontColor);
+    font-size: 1.5rem;
+}
+  
+.PROFILE .icon:hover{
+    transform: scale(.9);
+    transition: .2s ease-in-out;
+}
+  
+.PROFILE > .aside {
+    color: var(--secondaryFontColor);
+    width: auto;
+}
+  
+.PROFILE > .aside .introduction a {
+    
+    transform: translateX(-50%);
+    background-color: var(--secondaryBackground);
+    color: var(--primaryFontColor);
+    /* font-size: .9rem; */
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(110, 110, 110, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .4);
+    transition: transform 0.2s ease-in-out;
+    animation: moveRight 2s ease-in-out infinite;
+    z-index: 9999;
+}
+  
+.PROFILE > .aside .introduction a:hover {
+    animation: none .5s ease-in-out;
+    transition: .2s ease-in-out;
+}
+  
+  
+.PROFILE > .aside .introduction p {
+    margin-bottom: 1.25rem;
+}
+  
+.PROFILE > .aside .introduction h5 {
+    margin: 1.25rem 0 0.625rem 0;
+}
+
+.PROFILE > .aside {
+    animation: intro-text 2s ease-in-out;
+}
+  
+.PROFILE > .left {
+    position: relative;
+    animation: iconss 2s ease-in-out;
+}
+
+.PROFILE > .profilePic {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: 0%;
+    /* left: var(--profilePosition); */
+    transform: translateX(-50%);
+    animation: profile 2s ease-in-out;
+    /* visibility: hidden; */
+}
+  
+.PROFILE > .profilePic > img {
+    /* height: 18rem;
+    width: 14rem; */
+    filter: drop-shadow(-4px 4px 8px rgba(0, 0, 0, .3));
+}
+  
+/* Keyframes for animations */
+@keyframes iconss {
+    from { transform: translateX(-100%);}
+    to { transform: translateX(0);}
+}
+  
+@keyframes profile {
+    from { transform: translateX(-100%);}
+    to { transform: translateX(0);}
+}
+  
+@keyframes intro-text {
+    from { transform: translateX(100%);}
+    to { transform: translateX(0);}
+}
+
+@keyframes moveRight {
+    0%, 100% {
+        box-shadow: inset 2px 2px 2px 0px rgba(110, 110, 110, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .4);
+    }
+    50% {
+        box-shadow: inset 0px 0px 0px 0px rgba(110, 110, 110, .1),
+                7px 7px 10px 0px rgba(42, 53, 71, .8);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .PROFILE{
+      padding-bottom: 40px;
+      display: flex;
+    }
+    .PROFILE .left{
+      width: 50%;
+    }
+    .PROFILE .left .icon{
+      font-size: 2rem;
+    }
+    .PROFILE .aside{
+      width: 50%;
+    }
+    .PROFILE > .profilePic{
+      /* visibility: unset; */
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .PROFILE {
+        width: 80%; 
+        margin: 0 auto;
+    }
+}

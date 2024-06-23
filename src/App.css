@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    /* border: 1px solid red; */
+html, 
+body{ 
+    width: 100%; 
+    margin: 0 auto;
 }
 
+html{ scroll-behavior: smooth; }
 
-html, body{
+body{
+    margin:  0 auto;
     width: 100%;
-}
-
-html{
-    scroll-behavior: smooth;
 }

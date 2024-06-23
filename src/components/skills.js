@@ -3,7 +3,7 @@ import useIsVisible from './useIsVisible';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboardList, faExclamationTriangle, faNetworkWired, faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGitAlt, faJira } from '@fortawesome/free-brands-svg-icons';
-// import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
+import '../assets/skills.css'
 
 const Skills = () => {
     const toolSets = [
@@ -41,31 +41,33 @@ const Skills = () => {
     const isVisible = useIsVisible(skillsRef, { threshold: 0.3 });
 
     return (
-        <div id="skills" className="sm:flex sm:flex-center sm:items-center" ref={skillsRef}>
-            <div className='skills-con-1'>
-                <h2 className={`md:text-4xl text-xl m-4 ${isVisible ? 'visible' : 'invisible'}`}
-                    style={{
-                        opacity: isVisible ? 1 : 0,
-                        transition: 'opacity 0.5s ease-in-out',
-                        transitionDelay: isVisible ? '0.5s' : '0s'
-                    }}
-                >SKILLS</h2>
+        <div id="skills" className="items-center" ref={skillsRef}>
+        <h2 className={`md:text-4xl text-xl w-full text-center ${isVisible ? 'visible' : 'invisible'}`}
+            style={{
+                opacity: isVisible ? 1 : 0,
+                transition: 'opacity 0.5s ease-in-out',
+                transitionDelay: isVisible ? '0.5s' : '0s'
+            }}
+        >
+            SKILLS
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full overflow-hidden">
+            <div className='skills-con-1 lg:w-1/2 w-full'>
                 <div className="sets flex flex-wrap justify-center">
                     {skillSets.map((set) => (
                         <SkillSet key={set.id} skills={set.skills} isVisible={isVisible} />
                     ))}
                 </div>
             </div>
-            <div className='skills-con-2'>
+            <div className='skills-con-2 md:w-1/2 w-full'>
                 <div className="tools-set-con">
                     {toolSets.map((tool) => (
                         <div key={tool.id} className={`tools-set space-x-10 md:m-5 m-3 ${isVisible ? 'fade-in' : 'fade-out'}`}
-                        
-                        style={{
-                            opacity: isVisible ? 1 : 0,
-                            transition: 'opacity 0.5s ease-in-out',
-                            transitionDelay: isVisible ? '0.5s' : '0s'
-                        }}
+                            style={{
+                                opacity: isVisible ? 1 : 0,
+                                transition: 'opacity 0.5s ease-in-out',
+                                transitionDelay: isVisible ? '0.5s' : '0s'
+                            }}
                         >
                             <label>{tool.label}</label>
                             <FontAwesomeIcon className="tool-icon" icon={tool.icon} />
@@ -74,13 +76,15 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+    </div>
+    
     );
 };
 
 const SkillSet = ({ skills, isVisible }) => {
     return (
         <div
-            className={`set m-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
+            className={`set m-2 sm:w-36 md:w-80 2xl:w-90 lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
             style={{
                 opacity: isVisible ? 1 : 0,
                 transition: 'opacity 0.5s ease-in-out',
@@ -90,7 +94,7 @@ const SkillSet = ({ skills, isVisible }) => {
             {skills.map((skill) => (
                 <div key={skill.id} className="mb-2">
                     <label htmlFor={skill.id} className="block mb-1">{skill.name}</label>
-                    <div className="skills" id={skill.id}>
+                    <div className="skills lg:w-full" id={skill.id}>
                         <div
                             className="skill-bar"
                             style={{

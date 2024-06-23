@@ -6,8 +6,24 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    // fontSize: {}
-    extend: {},
+    screens: {
+      'sm': '360px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '2500px',
+    },
+    extend: {
+      screens: {
+        'sm': '360px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        '3xl': '2500px',
+      },
+    },
   },
   plugins: [],
 }
