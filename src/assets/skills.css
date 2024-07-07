@@ -48,7 +48,7 @@
 #skills .skill-bar {
     border-radius: 0.3125rem;
     height: 100%;
-    background-color: var(--secondaryFontColor);
+    background-color: var(--altFontColor);
     position: absolute;
     top: 0;
     left: 0;

@@ -1,8 +1,10 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleUp, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import useIsVisible from "./useIsVisible";
-
+import AnimateMulti from "./animate";
+import '../assets/project.css'
+import { LoginSection, AnimateSidebar, AnimateTracking } from "./animate";
 
 const Project = () => {
     const projectSets = [
@@ -15,7 +17,8 @@ const Project = () => {
                     tools: 'Python, Pytest, Selenium',
                     feature: 'Multi',
                     caption: 'This pytest automation script is designed to test various functionalities of the Multi Feature', 
-                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest.git' 
+                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest.git',
+                    image: 'AnimateMulti'
                 },
                 { 
                     name: 'Web Game Automation', 
@@ -23,31 +26,35 @@ const Project = () => {
                     tools: 'Cypress', 
                     feature: 'Sidebet', 
                     caption: 'This Cypress test suite is designed to automate the testing of a mobile Vue application\'s Sidebet feature', 
-                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Cypress.git' 
+                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Cypress.git',
+                    image: 'AnimateSidebar'
                 },
-                { 
-                    name: 'Flight Tracking', 
-                    id: 'project-3', 
-                    tools: 'Python, Pytest, Selenium',
-                    feature: 'Tracking',
-                    caption: 'This pytest automation script is designed to automate the testing of a cargo shipment schedule validation', 
-                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest.git' 
-                },
+                // { 
+                //     name: 'Flight Tracking', 
+                //     id: 'project-3', 
+                //     tools: 'Python, Pytest, Selenium',
+                //     feature: 'Tracking',
+                //     caption: 'This pytest automation script is designed to automate the testing of a cargo shipment schedule validation', 
+                //     url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest.git',
+                //     image: 'AnimateTracking'
+                // },
                 { 
                     name: 'Flight Tracking', 
                     id: 'project-4', 
                     tools: 'Groovy',
                     feature: 'Tracking',
                     caption: 'This groovy automation script is designed to automate the testing of a cargo shipment schedule validation', 
-                    url: 'https://github.com/Code-Me-N0t/Flight_Tracking-Groovy.git' 
+                    url: 'https://github.com/Code-Me-N0t/Flight_Tracking-Groovy.git',
+                    image: 'AnimateTracking'
                 },
                 { 
                     name: 'Google Login', 
-                    id: 'project-5',  // Adjusted id to be unique
+                    id: 'project-5',
                     tools: 'Robot Framework, Selenium',
                     feature: 'Login',
                     caption: 'This robot automation script is designed to automate the testing sign-in functionality on a website', 
-                    url: 'https://github.com/Code-Me-N0t/Google_Login-Robotframework.git' 
+                    url: 'https://github.com/Code-Me-N0t/Google_Login-Robotframework.git',
+                    image:'LoginSection'
                 },
             ]
         },
@@ -65,7 +72,7 @@ const Project = () => {
 
 const ProjectSets = ({ projects }) => {
     return (
-        <div className="projects lg:grid lg:grid-cols-3">
+        <div className="projects lg:grid lg:grid-cols-2 gap-7">
             {projects.map((project) => (
                 <ProjectItem key={project.id} project={project} />
             ))}
@@ -80,30 +87,42 @@ const ProjectItem = ({ project }) => {
     const projectRef = useRef();
     const isVisible = useIsVisible(projectRef, { threshold: 0.3 });
 
+    const renderAnimation = () => {
+        switch (project.image) {
+            case 'AnimateMulti':
+                return <AnimateMulti />;
+            case 'LoginSection':
+                return <LoginSection />;
+            case 'AnimateSidebar':
+                return <AnimateSidebar />;
+            case 'AnimateTracking':
+                return <AnimateTracking />;
+            default:
+                return null; // Handle the case where no animation component matches
+        }
+    };
+
     return (
-        <li ref={projectRef}>
-            <div className={`per-projects lg:w-80 lg:h-36 md:w-full p-3 mb-4 grid grid-cols-3 grid-rows-2 gap-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
+        <li ref={projectRef} className="flex justify-center">
+            <div className={`per-projects lg:w-11/12 lg:h-64 md:w-full overflow-hidden mb-4 lg:grid lg:grid-cols-2 gap-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transition: 'opacity 0.5s ease-in-out',
                 }}
             >
-                <label id={project.id} className="font-bold col-span-2">{project.name}</label>
-                <FontAwesomeIcon
-                    icon={isOpen ? faAngleUp : faAngleDown}
-                    className="cursor-pointer col-start-3 row-span-2 self-center justify-self-end"
-                    onClick={toggleVisibility}
-                />
-                
-                <p className="col-span-2">{project.tools} | {project.feature}</p>
-                {isOpen && (
-                    <div className="description col-span-3 mt-2 p-3 grid grid-cols-3 lg:grid-cols-1 gap-2">
-                        <p className="lg:col-span-2">{project.caption}</p>
-                        <a href={project.url} className="self-center justify-self-end flex items-center justify-center">
-                            <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link"/>
-                        </a>
+                <div className="detail-bg m-3 space-y-3">
+                    <label id={project.id} className="font-semibold lg:text-2xl">{project.name}</label>
+                    <p className="lg:text-lg">{project.tools} | {project.feature}</p>
+                    <div className="description p-2">
+                        <p className="">{project.caption}</p>
+                        {/* <a href={project.url} className="self-center justify-self-end ">
+                            <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link" />
+                        </a> */}
                     </div>
-                )}
+                </div>
+                <div className="animate lg:col-span-1 flex justify-center items-center">
+                    {renderAnimation()} 
+                </div>
             </div>
         </li>
     );
