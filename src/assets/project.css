@@ -27,6 +27,7 @@
 #project .per-projects {
     border-radius: 5px;
     background-color: var(--secondaryBackground);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     /* border: 2px solid var(--secondaryFontColor); */
 }
   

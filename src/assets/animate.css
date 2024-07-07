@@ -32,6 +32,7 @@
 }
 
 .container .clicker {
+    color: var(--secondaryFontColor);
     font-size: 50px;
     position: relative;
     top: 50%;
@@ -51,7 +52,7 @@
     display: flex;
     justify-content: center;
     bottom: 0%;
-    background-color: gray;
+    background-color: #283142;
     border-radius: 10px 10px 0 0;
 }
 
@@ -71,7 +72,7 @@
 
 .container .overlay{
     height: 100%;
-    background-color: rgb(201, 201, 201);
+    background-color: rgba(35, 43, 58);
     position: absolute;
     width: 100%;
     display: flex;
@@ -85,7 +86,7 @@
 .container .overlay .overlay-cons{
     height: 30%;
     width: 100%;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(31, 38, 51);
     animation: visible 2s ease-in-out infinite;
 }
 
@@ -105,8 +106,8 @@
     height: 50%;
     width: 80%;
     border-radius: 5px;
-    background-color: rgb(182, 182, 182);
-    box-shadow: 2px 2px 10px;
+    background-color: rgb(58, 70, 92);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
     position: relative;
     top: 5%;
     animation: autoscroll 2s ease-in-out infinite;
@@ -223,11 +224,11 @@
 
 @keyframes resizeTracking{
     0%, 40% {
-        background-color: rgb(182, 182, 182);
+        background-color: rgb(58, 70, 92);
         transform: translateY(0%) scale(1);
     }
     80% {
-        background-color: rgb(182, 182, 182);
+        background-color: rgb(58, 70, 92);
         transform: translateY(-210%) scale(1.2);
     }
     90% {
@@ -235,7 +236,7 @@
         transform: translateY(-210%) scale(1.1);
     }
     100%  {
-        background-color: rgb(182, 182, 182);
+        background-color: rgb(58, 70, 92);
         transform: translateY(-210%) scale(1.2);
     }
 }
@@ -331,7 +332,7 @@
 
 @keyframes resizeMulti {
     0%, 40%, 50% {
-        background-color: gray;
+        background-color: #283142;
         transform: scale(1);
     }
     60% {
@@ -339,7 +340,7 @@
         transform: scale(.8);
     }
     90%, 100% {
-        background-color: gray;
+        background-color: #283142;
         transform: scale(1);
     }
 }
