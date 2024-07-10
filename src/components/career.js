@@ -33,20 +33,34 @@ const Timeline = () => {
             description: 'This is where I finished my studies with a degree in Computer Science, Major in Application Development. The time where I aspire to be a frontend web developer.'
         }
     ];
+    const ref = useRef();
+    const isVisible = useIsVisible(ref, { threshold: 0.3 });
 
     return (
-        <ul className="timeline">
-            {timelineData.map((item, index) => (
-                <TimelineItem
-                    key={index}
-                    direction={item.direction}
-                    flag={item.flag}
-                    position={item.position}
-                    time={item.time}
-                    description={item.description}
-                />
-            ))}
-        </ul>
+        <div ref={ref}>
+            <h2 className={`mt-5 md:text-4xl text-xl w-full text-center ${isVisible ? 'visible' : 'invisible'}`}
+            style={{
+                opacity: isVisible ? 1 : 0,
+                transition: 'opacity 0.5s ease-in-out',
+                // transitionDelay: isVisible ? '0.5s' : '0s'
+            }}
+        >
+            CAREER
+        </h2>
+            <ul className="timeline">
+                
+                {timelineData.map((item, index) => (
+                    <TimelineItem
+                        key={index}
+                        direction={item.direction}
+                        flag={item.flag}
+                        position={item.position}
+                        time={item.time}
+                        description={item.description}
+                    />
+                ))}
+            </ul>
+        </div>
     );
 };
 
@@ -57,7 +71,7 @@ const TimelineItem = ({ direction, flag, position, time, description }) => {
     return (
         <li ref={itemRef}>
             <div
-                className={`${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
+                className={`lg:text-xl xl:text-xl 2xl:text-xl ${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transition: 'opacity 0.5s ease-in-out',

@@ -7,7 +7,7 @@ const LoginSection = () => {
     return (
         <div className="container">
             <div className="login">
-                <div className="letter">redenlongcop5@gmail.com</div>
+                <div className="letter lg:text-xs py-2 text-gray-500">redenlongcop5@gmail.com</div>
                 <button>Login</button>
             </div>
             <FontAwesomeIcon icon={faMousePointer} className="clicker login-animation-clicker" />

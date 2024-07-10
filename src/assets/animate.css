@@ -14,7 +14,7 @@
 .container .sidebar{
     height: 100%;
     float: right;
-    background-color: gray;
+    background-color: #283142;
     animation: resizeSidebar 2s ease-in-out infinite;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
     width: 90%;
     height: 30%;
     border-radius: 5px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(31, 38, 51);
     animation: visible 2s ease-in-out infinite;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .container .multi {
-    height: 20%;
+    height: 15%;
     width: 100%;
     position: absolute;
     display: flex;
@@ -123,8 +123,9 @@
 
 .container .login{
     border-radius: 10px;
-    border: 3px solid gray;
-    height: 20%;
+    border: 3px solid rgb(58, 70, 92);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    height: auto;
     width: 90%;
     position: absolute;
     display: flex;
@@ -144,6 +145,7 @@
 
 .container .login .letter {
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .container .login button{
@@ -159,7 +161,7 @@
     top: 120%;
     width: 40%;
     color: white;
-    background-color: gray;
+    background-color: rgb(58, 70, 92);
     animation: clickButton 1s ease-in-out infinite;
 }
 
@@ -169,7 +171,7 @@
     }
     50%{
         transform: scale(1.1);
-        background-color: gray;
+        background-color: rgb(58, 70, 92);
     }
     80%{
         background-color: rgb(127, 208, 240);
@@ -181,18 +183,18 @@
         transform: translate(-50%) scale(1);
     }
     40% {
-        top: 60%;
-        left: 70%;
+        top: 50%;
+        left: 75%;
         transform: translate(-50%) scale(1);
     }
     50% {
-        top: 60%;
-        left: 70%;
+        top: 50%;
+        left: 75%;
         transform: translate(-50%) scale(0.8);
     }
     80%, 90%, 100% {
-        top: 60%;
-        left: 70%;
+        top: 50%;
+        left: 75%;
         transform: translate(-50%) scale(1);
     }
 }

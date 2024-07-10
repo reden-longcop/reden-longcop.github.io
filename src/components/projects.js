@@ -1,6 +1,4 @@
-import React, { useState, useRef } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import React, { useRef } from "react";
 import useIsVisible from "./useIsVisible";
 import AnimateMulti from "./animate";
 import '../assets/project.css'
@@ -48,7 +46,7 @@ const Project = () => {
                     image: 'AnimateTracking'
                 },
                 { 
-                    name: 'Google Login', 
+                    name: 'Login Automation', 
                     id: 'project-5',
                     tools: 'Robot Framework, Selenium',
                     feature: 'Login',
@@ -81,8 +79,6 @@ const ProjectSets = ({ projects }) => {
 };
 
 const ProjectItem = ({ project }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleVisibility = () => setIsOpen(!isOpen);
 
     const projectRef = useRef();
     const isVisible = useIsVisible(projectRef, { threshold: 0.3 });
@@ -103,8 +99,8 @@ const ProjectItem = ({ project }) => {
     };
 
     return (
-        <li ref={projectRef} className="flex justify-center">
-            <div className={`per-projects lg:w-11/12 lg:h-64 md:w-full overflow-hidden mb-4 lg:grid lg:grid-cols-2 gap-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
+        <li ref={projectRef} className="md:pb-3 sm:pb-3 flex justify-center">
+            <div className={`per-projects lg:w-full lg:h-full md:w-full overflow-hidden lg:grid lg:grid-cols-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transition: 'opacity 0.5s ease-in-out',
@@ -115,9 +111,10 @@ const ProjectItem = ({ project }) => {
                     <p className="lg:text-lg">{project.tools} | {project.feature}</p>
                     <div className="description p-2">
                         <p className="">{project.caption}</p>
-                        {/* <a href={project.url} className="self-center justify-self-end ">
-                            <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link" />
-                        </a> */}
+                        <a href={project.url} className="self-center justify-self-end ">
+                            {/* <FontAwesomeIcon icon={faUpRightFromSquare} className="project-link" /> */}
+                            <p className="mt-4 underline">Go To Project</p>
+                        </a>
                     </div>
                 </div>
                 <div className="animate lg:col-span-1 flex justify-center items-center">

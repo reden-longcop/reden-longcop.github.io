@@ -52,6 +52,7 @@
     border-radius: 10px;
     background-color: var(--primaryBackground);
     text-align: justify;
+    padding-left: 0;
 }
 
 #project .description a .project-link{

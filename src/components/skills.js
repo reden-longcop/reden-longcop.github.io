@@ -59,7 +59,7 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
-            <div className='skills-con-2 md:w-1/2 w-full'>
+            <div className='skills-con-2 md:w-full w-full'>
                 <div className="tools-set-con">
                     {toolSets.map((tool) => (
                         <div key={tool.id} className={`tools-set space-x-10 md:m-5 m-3 ${isVisible ? 'fade-in' : 'fade-out'}`}
@@ -84,7 +84,7 @@ const Skills = () => {
 const SkillSet = ({ skills, isVisible }) => {
     return (
         <div
-            className={`set m-2 sm:w-36 md:w-80 2xl:w-90 lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
+            className={`set m-2 sm:w-36 md:w-44 2xl:w-90 lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
             style={{
                 opacity: isVisible ? 1 : 0,
                 transition: 'opacity 0.5s ease-in-out',

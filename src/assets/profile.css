@@ -5,6 +5,7 @@
     background-color: var(--secondaryBackground);
     padding: 1rem;
     text-align: justify;
+    overflow-x: hidden;
     /* border: 1px solid red; */
 }
   
@@ -127,9 +128,6 @@
     }
     .PROFILE .aside{
       width: 50%;
-    }
-    .PROFILE > .profilePic{
-      /* visibility: unset; */
     }
 }
 
