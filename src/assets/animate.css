@@ -183,17 +183,17 @@
         transform: translate(-50%) scale(1);
     }
     40% {
-        top: 50%;
+        top: 55%;
         left: 75%;
         transform: translate(-50%) scale(1);
     }
     50% {
-        top: 50%;
+        top: 55%;
         left: 75%;
         transform: translate(-50%) scale(0.8);
     }
     80%, 90%, 100% {
-        top: 50%;
+        top: 55%;
         left: 75%;
         transform: translate(-50%) scale(1);
     }
