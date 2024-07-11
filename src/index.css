@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,8 @@
 :root {
   --primaryBackground: #212a38;
   --secondaryBackground: #2a3547;
-  --primaryFont: 'Poppins', sans-serif;
+  --secondaryFont: 'Poppins', sans-serif;
+  --primaryFont: 'Montserrat', sans-serif;
   --primaryFontColor: #f5cfbf;
   --secondaryFontColor: #aaaaaa;
   --altsecondaryFontColor: #6e6e6e;
@@ -19,7 +21,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--primaryFont);
 }
 
 html, body {

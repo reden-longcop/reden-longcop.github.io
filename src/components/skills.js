@@ -51,8 +51,8 @@ const Skills = () => {
         >
             SKILLS
         </h2>
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full overflow-hidden">
-            <div className='skills-con-1 lg:w-1/2 w-full'>
+        <div className="flex flex-col lg:flex-row items-center justify-center overflow-hidden">
+            <div className='skills-con-1 w-full'>
                 <div className="sets flex flex-wrap justify-center">
                     {skillSets.map((set) => (
                         <SkillSet key={set.id} skills={set.skills} isVisible={isVisible} />
@@ -84,7 +84,7 @@ const Skills = () => {
 const SkillSet = ({ skills, isVisible }) => {
     return (
         <div
-            className={`set m-2 sm:w-36 md:w-44 2xl:w-5/12  lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
+            className={`set m-2 sm:w-40 md:w-56 lg:w-5/12 xl:w-5/12  lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
             style={{
                 opacity: isVisible ? 1 : 0,
                 transition: 'opacity 0.5s ease-in-out',

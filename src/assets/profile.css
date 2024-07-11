@@ -11,6 +11,7 @@
   
 .PROFILE > .left h1 {
     color: var(--primaryFontColor);
+    font-family: var(--secondaryFont);
 }
   
 .PROFILE > .left > h3{

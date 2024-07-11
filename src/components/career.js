@@ -9,44 +9,34 @@ const Timeline = () => {
             flag: 'Mid QA Trainee',
             position: 'IT Americano Inc.',
             time: 'June 2024 - Present',
-            description: 'Currently I\'m undergoing a training for the Mid QA position while also improving both my manual and automation skills. I\'m exploring other web automation tools such as Groovy and Cypress.'
+            description: 'Advanced knowledge in automation testing, led small QA projects, mentored new junior QA, and worked on enhancing the efficiency and effectiveness of the QA team. Expanded expertise in using various QA tools and frameworks.'
         },
         {
             direction: 'direction-r',
             flag: 'Jr QA Engineer',
             position: 'IT Americano Inc.',
             time: 'September 2023 - June 2024',
-            description: 'I was hired by the same company, where my tasks include creating automation scripts using Python for key project features. My daily work also involves writing and executing test cases and verifying bugs.'
+            description: 'Conducted functional, regression, and performance testing on various software products. Collaborated with development teams to ensure quality standards were met and contributed to the improvement of testing processes.'
         },
         {
             direction: 'direction-l',
             flag: 'QA Intern',
             position: 'IT Americano Inc.',
             time: 'March - June 2023',
-            description: 'During my internship, I learned extensively about Quality Assurance and enjoyed working with Robot Framework under my QA Lead\'s supervision.'
+            description: 'Assisted senior QA engineers in testing web and mobile applications, learned basic testing methodologies, and contributed to the identification and documentation of bugs and issues.'
         },
         {
             direction: 'direction-r',
             flag: 'Student',
             position: 'University of Makati',
             time: 'August 2019 - August 2023',
-            description: 'This is where I finished my studies with a degree in Computer Science, Major in Application Development. The time where I aspire to be a frontend web developer.'
+            description: 'Graduated with a Bachelor of Science in Computer Science, majoring in Application Development. Acquired a strong academic foundation in software engineering, honed critical thinking and problem-solving skills, and developed expertise in application development through hands-on projects and coursework.'
         }
     ];
-    const ref = useRef();
-    const isVisible = useIsVisible(ref, { threshold: 0.3 });
 
     return (
-        <div ref={ref}>
-            <h2 className={`mt-5 md:text-4xl text-xl w-full text-center ${isVisible ? 'visible' : 'invisible'}`}
-            style={{
-                opacity: isVisible ? 1 : 0,
-                transition: 'opacity 0.5s ease-in-out',
-                // transitionDelay: isVisible ? '0.5s' : '0s'
-            }}
-        >
-            CAREER
-        </h2>
+        <div>
+            <h2 className="md:text-4xl text-xl mt-8 text-center">CAREER</h2>
             <ul className="timeline">
                 
                 {timelineData.map((item, index) => (
@@ -71,7 +61,7 @@ const TimelineItem = ({ direction, flag, position, time, description }) => {
     return (
         <li ref={itemRef}>
             <div
-                className={`lg:text-xl xl:text-xl 2xl:text-xl ${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
+                className={`box lg:text-xl xl:text-xl 2xl:text-xl ${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transition: 'opacity 0.5s ease-in-out',
