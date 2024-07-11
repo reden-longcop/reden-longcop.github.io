@@ -30,7 +30,7 @@ const Timeline = () => {
             flag: 'Student',
             position: 'University of Makati',
             time: 'August 2019 - August 2023',
-            description: 'Graduated with a Bachelor of Science in Computer Science, majoring in Application Development. Acquired a strong academic foundation in software engineering, honed critical thinking and problem-solving skills, and developed expertise in application development through hands-on projects and coursework.'
+            description: 'Graduated with a Bachelor of Science in Computer Science, major in Application Development. Acquired a strong academic foundation in software engineering, honed critical thinking and problem-solving skills, and developed expertise in application development through hands-on projects and coursework.'
         }
     ];
 
