@@ -61,7 +61,7 @@ const TimelineItem = ({ direction, flag, position, time, description }) => {
     return (
         <li ref={itemRef}>
             <div
-                className={`box lg:text-xl xl:text-xl 2xl:text-xl ${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
+                className={`box lg:mt-5 lg:text-xl xl:text-xl 2xl:text-xl ${direction} ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transition: 'opacity 0.5s ease-in-out',
