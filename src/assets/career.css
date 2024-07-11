@@ -51,7 +51,6 @@ h2{
     position: relative;
     display: inline-block;
     text-align: center;
-    margin-bottom: 1rem;
 }
   
 .flag {
@@ -196,7 +195,7 @@ h2{
       border-right-color: transparent;
       border-bottom-color: rgb(248,248,248);
       margin-left: -0.625rem;
-      margin-top: -0.25rem;
+      margin-top: -0.15rem;
     }
   
     .direction-l .time-wrapper, .direction-r .time-wrapper {
@@ -236,7 +235,7 @@ h2{
       width: 46.5%;
     }
     .desc{
-      margin: 0;
+      margin: 1rem 0 0;
     }
   }
 
