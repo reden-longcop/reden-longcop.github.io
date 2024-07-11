@@ -84,7 +84,7 @@ const Skills = () => {
 const SkillSet = ({ skills, isVisible }) => {
     return (
         <div
-            className={`set m-2 sm:w-36 md:w-44 2xl:w-90 lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
+            className={`set m-2 sm:w-36 md:w-44 2xl:w-5/12  lg:space-y-10 ${isVisible ? 'fade-in' : 'fade-out'}`}
             style={{
                 opacity: isVisible ? 1 : 0,
                 transition: 'opacity 0.5s ease-in-out',
