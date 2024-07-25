@@ -8,31 +8,31 @@ import '../assets/skills.css'
 const Skills = () => {
     const toolSets = [
         { id: 1, icon: faJira, label: 'Proficient in using bug tracking tool like JIRA' },
-        { id: 1, icon: faGitAlt, label: 'Proficient in using GIT commands' },
-        { id: 1, icon: faNetworkWired, label: 'Familiarity in using API testing using POSTMAN' },
-        { id: 1, icon: faTachometerAlt, label: 'Familiarity in performance testing tools like JMETER and LOCUST' },
-        { id: 1, icon: faClipboardList, label: 'Proficient in using bug tracking tool like JIRA' },
-        { id: 1, icon: faExclamationTriangle, label: 'Proficient in using bug tracking tool like JIRA' },
+        { id: 2, icon: faGitAlt, label: 'Proficient in using GIT commands' },
+        { id: 3, icon: faNetworkWired, label: 'Familiarity in using API testing using POSTMAN' },
+        { id: 4, icon: faTachometerAlt, label: 'Familiarity in performance testing tools like JMETER and LOCUST' },
+        { id: 5, icon: faClipboardList, label: 'Proficient in using bug tracking tool like JIRA' },
+        { id: 6, icon: faExclamationTriangle, label: 'Proficient in using bug tracking tool like JIRA' },
     ];
     const skillSets = [
         {
             id: 1,
             skills: [
-                { name: 'CSS', id: 'CSS', level: 90 },
-                { name: 'Javascript', id: 'Javascript', level: 80 },
-                { name: 'HTML', id: 'HTML', level: 85 },
-                { name: 'PHP', id: 'PHP', level: 70 },
-                { name: 'PYTHON', id: 'PYTHON', level: 75 }
+                { name: 'CSS',          id: 'CSS',          level: 90 },
+                { name: 'Javascript',   id: 'Javascript',   level: 80 },
+                { name: 'HTML',         id: 'HTML',         level: 85 },
+                { name: 'PHP',          id: 'PHP',          level: 70 },
+                { name: 'PYTHON',       id: 'PYTHON',       level: 75 }
             ]
         },
         {
             id: 2,
             skills: [
-                { name: 'Selenium', id: 'selenium', level: 80 },
-                { name: 'Robot Framework', id: 'robot', level: 65 },
-                { name: 'Python | Pytest', id: 'pytest', level: 70 },
-                { name: 'JS | Cypress', id: 'cypress', level: 60 },
-                { name: 'Java | Groovy', id: 'groovy', level: 40 }
+                { name: 'Selenium',         id: 'selenium', level: 80 },
+                { name: 'Robot Framework',  id: 'robot',    level: 65 },
+                { name: 'Python | Pytest',  id: 'pytest',   level: 70 },
+                { name: 'JS | Cypress',     id: 'cypress',  level: 60 },
+                { name: 'Java | Groovy',    id: 'groovy',   level: 40 }
             ]
         }
     ];
@@ -77,7 +77,6 @@ const Skills = () => {
             </div>
         </div>
     </div>
-    
     );
 };
 

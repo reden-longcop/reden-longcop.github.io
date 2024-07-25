@@ -38,15 +38,10 @@ const Timeline = () => {
         <div>
             <h2 className="md:text-4xl text-xl mt-8 text-center">CAREER</h2>
             <ul className="timeline">
-                
                 {timelineData.map((item, index) => (
                     <TimelineItem
                         key={index}
-                        direction={item.direction}
-                        flag={item.flag}
-                        position={item.position}
-                        time={item.time}
-                        description={item.description}
+                        {...item}
                     />
                 ))}
             </ul>
