@@ -19,15 +19,24 @@ const Project = () => {
                 { 
                     name: 'Web Game Automation', 
                     id: 'project-1', 
-                    tools: 'Python, Pytest, Selenium',
+                    tools: 'Python • Pytest • Selenium',
                     feature: 'Multi',
                     caption: 'This pytest automation script is designed to test various functionalities of the Multi Feature', 
                     url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest.git',
                     image: 'AnimateMulti'
                 },
                 { 
-                    name: 'Web Game Automation', 
+                    name: 'Test Flow Manager', 
                     id: 'project-2', 
+                    tools: 'Javascript • Vite • React Flow', 
+                    feature: 'Test Case Visualizer', 
+                    caption: 'This project is a web application I built using Vite, React Flow, and Javascript. It allows you to visualize and manage test scenarios and test cases using nodes and edges.', 
+                    url: 'https://code-me-n0t.github.io/TestFlowManager/',
+                    image: 'AnimateSidebar'
+                },
+                { 
+                    name: 'Web Game Automation', 
+                    id: 'project-3', 
                     tools: 'Cypress', 
                     feature: 'Sidebet', 
                     caption: 'This Cypress test suite is designed to automate the testing of a mobile Vue application\'s Sidebet feature', 
@@ -35,18 +44,9 @@ const Project = () => {
                     image: 'AnimateSidebar'
                 },
                 { 
-                    name: 'Flight Tracking', 
-                    id: 'project-4', 
-                    tools: 'Groovy',
-                    feature: 'Tracking',
-                    caption: 'This groovy automation script is designed to automate the testing of a cargo shipment schedule validation', 
-                    url: 'https://github.com/Code-Me-N0t/Flight_Tracking-Groovy.git',
-                    image: 'AnimateTracking'
-                },
-                { 
                     name: 'Login Automation', 
                     id: 'project-5',
-                    tools: 'Robot Framework, Selenium',
+                    tools: 'Robot Framework • Selenium',
                     feature: 'Login',
                     caption: 'This robot automation script is designed to automate the testing sign-in functionality on a website', 
                     url: 'https://github.com/Code-Me-N0t/Google_Login-Robotframework.git',
@@ -82,7 +82,7 @@ const ProjectItem = ({ project }) => {
     return (
         <li ref={projectRef} className="md:pb-3 sm:pb-3 flex justify-center">
             <div
-                className={`per-projects lg:w-full lg:h-full md:w-full overflow-hidden lg:grid lg:grid-cols-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
+                className={`per-projects lg:w-full lg:h-full md:w-full overflow-hidden md:grid md:grid-cols-2 ${isVisible ? 'fade-in' : 'fade-out'}`}
                 style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}
             >
                 <div className="detail-bg m-3 space-y-3">
