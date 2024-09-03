@@ -62,8 +62,8 @@ function Profile() {
             >
                 <div className="introduction  lg:pe-10 xl:pe-20 pb-5 pe-2 xl:text-xl sm:pb-10">
                     <h5>- Introduction</h5>
-                    <p className="lg:pb-10">I'm a dedicated QA Engineer and Frontend Developer with a keen eye for details. 
-                        I specialize in creating intuitive user interfaces and ensuring software quality through meticulous testing. 
+                    <p className="lg:pb-10">I'm a dedicated QA Engineer with a keen eye for details. 
+                    I focus on developing and executing both manual and automated test cases to ensure high software quality through testing. 
                         My passion lies in delivering reliable and exceptional results.</p>
                     <a className='resume sm:w-56 py-2 px-4 xl:py-3 2xl:px-6 md:w-50 md:relative md:left-0 leading-5 sm:absolute sm:left-1/2' href={resume} download='Longcop_Reden-CV.pdf'>
                         <FontAwesomeIcon className="download-icon mr-5" icon={faDownload} /> Get My Resume</a>

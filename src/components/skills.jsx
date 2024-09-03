@@ -7,12 +7,12 @@ import '../assets/skills.css'
 
 const Skills = () => {
     const toolSets = [
-        { id: 1, icon: faJira, label: 'Proficient in using bug tracking tool like JIRA' },
-        { id: 2, icon: faGitAlt, label: 'Proficient in using GIT commands' },
-        { id: 3, icon: faNetworkWired, label: 'Familiarity in using API testing using POSTMAN' },
+        { id: 1, icon: faJira, label: 'Basic knowledge of using bug tracking tool like JIRA' },
+        { id: 2, icon: faGitAlt, label: 'Exposure to using GIT commands' },
+        { id: 3, icon: faNetworkWired, label: 'Experience with API testing using POSTMAN' },
         { id: 4, icon: faTachometerAlt, label: 'Familiarity in performance testing tools like JMETER and LOCUST' },
-        { id: 5, icon: faClipboardList, label: 'Proficient in using bug tracking tool like JIRA' },
-        { id: 6, icon: faExclamationTriangle, label: 'Proficient in using bug tracking tool like JIRA' },
+        { id: 5, icon: faClipboardList, label: 'Proficient in writing and executing Test Cases' },
+        { id: 6, icon: faExclamationTriangle, label: 'Familiarity in using some automation tools used in daily work routines' },
     ];
     const skillSets = [
         {
