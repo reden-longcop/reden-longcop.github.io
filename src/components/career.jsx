@@ -5,17 +5,10 @@ import '../assets/career.css';
 const Timeline = () => {
     const timelineData = [
         {
-            direction: 'direction-l',
-            flag: 'Mid QA Trainee',
-            position: 'IT Americano Inc.',
-            time: 'June 2024 - Present',
-            description: 'Advanced knowledge in automation testing, led small QA projects, mentored new junior QA, and worked on enhancing the efficiency and effectiveness of the QA team. Expanded expertise in using various QA tools and frameworks.'
-        },
-        {
             direction: 'direction-r',
             flag: 'Jr QA Engineer',
             position: 'IT Americano Inc.',
-            time: 'September 2023 - June 2024',
+            time: 'September 2023 - Present',
             description: 'Conducted functional, regression, and performance testing on various software products. Collaborated with development teams to ensure quality standards were met and contributed to the improvement of testing processes.'
         },
         {
