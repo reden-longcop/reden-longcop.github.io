@@ -32,7 +32,7 @@ const Project = () => {
                     feature: 'Test Case Visualizer', 
                     caption: 'This project is a web application I built using Vite, React Flow, and Javascript. It allows you to visualize and manage test scenarios and test cases using nodes and edges.', 
                     url: 'https://code-me-n0t.github.io/TestFlowManager/',
-                    image: 'AnimateSidebar'
+                    image: 'AnimateTracking'
                 },
                 { 
                     name: 'Web Game Automation', 
