@@ -8,7 +8,7 @@ import useIsVisible from './useIsVisible';
 import '../assets/profile.css'
 
 function Profile() {
-    const resume = "https://drive.google.com/uc?export=download&id=1eR7LMmC0Ld3b1FgO4qpstoe2mwofLiFt";
+    const resume = "https://drive.google.com/uc?export=download&id=1pW9BbGPdtSHpvhKHom2qZ5IhVCluO2Cw";
     const github_link = "https://github.com/Code-Me-N0t";
     const linkedin_link = "https://linkedin.com/in/redenlongcop";
     const emailto_link = "mailto:redenlongcop5@gmail.com";
