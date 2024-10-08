@@ -41,7 +41,7 @@ function Profile() {
                 </div>
             </div>
             <div 
-                className="profilePic sm:collapse md:block md:left-1/4 xl:left-1/4 2xl:left-1/3 lg:visible"
+                className="profilePic sm:collapse md:block md:left-36 2md:left-48 3md:left-56 xl:left-1/4 2xl:left-1/3 md:visible"
                 ref={profilePicRef}
                 style={{
                     opacity: isProfilePicVisible ? 1 : 0,
@@ -49,7 +49,7 @@ function Profile() {
                     transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out'
                 }}
             >
-                <img className="lg:size-2/5 xl:size-1/2" src={profile} alt="Profile"/>
+                <img className="md:size-1/2 lg:size-2/5 xl:size-1/2" src={profile} alt="Profile"/>
             </div>
             <div 
                 className="aside"

@@ -9,6 +9,8 @@ module.exports = {
     screens: {
       'sm': '320px',
       'md': '768px',
+      '2md': '900px',
+      '3md': '1000px',
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
@@ -18,6 +20,8 @@ module.exports = {
       screens: {
         'sm': '320px',
         'md': '768px',
+        '2md': '900px',
+        '3md': '1000px',
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
