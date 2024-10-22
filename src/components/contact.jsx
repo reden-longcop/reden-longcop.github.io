@@ -9,8 +9,8 @@ function Contact() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section contact">
-                    <h3>Contact Me</h3>
-                    <ul>
+                    <h3 className='font-bold'>Contact Me</h3>
+                    <ul className='md:flex md:justify-center md:space-x-10'>
                         <li>
                             <FontAwesomeIcon icon={faLinkedin} />
                             <a href="https://linkedin.com/in/redenlongcop"> linkedin.com/in/redenlongcop</a>
@@ -26,7 +26,7 @@ function Contact() {
                     </ul>
                 </div>
             </div>
-            <div className="footer-bottom">
+            <div className="footer-bottom text-gray-400">
                 &copy; 2024 Reden Longcop | Designed by Me :)
             </div>
         </footer>

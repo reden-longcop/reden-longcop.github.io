@@ -5,15 +5,22 @@ import '../assets/career.css';
 const Timeline = () => {
     const timelineData = [
         {
+            direction: 'direction-l',
+            flag: 'Associate QA Engineer',
+            position: 'Amihan Global Strategies, Phils, Inc.',
+            time: 'November 2024 - Present',
+            description: 'Reviews and validates requirements and technical specs. Develops and runs test plans and detailed test cases based on requirements and customer feedback. Provides insights or suggestions after analyzing test results and overall product quality. Works with the development team to verify bug fixes, conduct validation, and perform regression testing. Manages testing efforts across multiple projects while meeting tight deadlines.'
+        },
+        {
             direction: 'direction-r',
-            flag: 'Jr QA Engineer',
+            flag: 'Junior QA Engineer',
             position: 'IT Americano Inc.',
-            time: 'September 2023 - Present',
-            description: 'Conducted functional, regression, and performance testing on various software products. Collaborated with development teams to ensure quality standards were met and contributed to the improvement of testing processes.'
+            time: 'September 2023 - November 2024',
+            description: 'Performed functional, regression, and performance testing on a web-based application to ensure its quality and reliability. Developed, updated, and maintained test cases for both manual and automated testing to cover a wide range of scenarios. Worked closely with the offshore development team and key stakeholders to verify bug fixes, ensuring that identified issues were resolved effectively and the application met expected standards.'
         },
         {
             direction: 'direction-l',
-            flag: 'QA Intern',
+            flag: 'Functional QA Intern',
             position: 'IT Americano Inc.',
             time: 'March - June 2023',
             description: 'Assisted senior QA engineers in testing web and mobile applications, learned basic testing methodologies, and contributed to the identification and documentation of bugs and issues.'

@@ -58,5 +58,5 @@ const AnimateMulti = () => (
     </div>
 );
 
-export default AnimateMulti;
-export { LoginSection, AnimateSidebar, AnimateTracking };
+// export default AnimateMulti;
+export { LoginSection, AnimateSidebar, AnimateTracking, AnimateMulti };
