@@ -9,10 +9,12 @@ const AnimatedIcon = ({ className }) => (
 const LoginSection = () => (
     <div className="container">
         <div className="login">
-            <div className="letter lg:text-xs py-2 text-gray-500">redenlongcop5@gmail.com</div>
+            <div className="letter md:text-sm py-2 text-gray-500 md:overflow-hidden">
+                <p className='typewriter-animation cursor w-fit overflow-hidden float-left'>redenlongcop5@gmail.com</p>
+            </div>
             <button>Login</button>
         </div>
-        <AnimatedIcon className="login-animation-clicker" />
+        {/* <AnimatedIcon className="login-animation-clicker" /> */}
     </div>
 );
 

@@ -46,7 +46,7 @@ const Project = () => {
                     name: 'Smoke Testing Automation', 
                     id: 'project-5',
                     tools: 'Robot Framework • Selenium',
-                    feature: 'Login',
+                    feature: 'Game Navigation',
                     caption: 'This project is a smoke test automation script for a gaming web application built using Robot Framework. It tests core functionalities by utilizing keyword-driven testing, with locators for web elements and variables for credentials. Test cases are written in Gherkin syntax and produce reports in the output folder. The setup includes library imports, setup/teardown configurations, and is executed via Robot Framework’s terminal command.', 
                     url: 'https://github.com/Code-Me-N0t/Smoke_Testing_Automation-RobotFramework',
                     image: 'LoginSection'
@@ -98,9 +98,13 @@ const ProjectItem = ({ project, index }) => {
                         </div>
                         <div className={`md:w-[50%] flex justify-center absolute md:visible sm:collapse ${isEven ? 'md:right-[0]': 'md:left-[0]'}`}>
                             <div className="laptop lg:w-[80%] 3xl:w-[60%] h-[100%] p-5 md:w-full">
-                                <div className="screen md:w-[80%] md:h-[200px] 2xl:h-[300px] 3xl:w-[]">
-                                    <div className="lcd ">
-                                        {AnimationComponent && <AnimationComponent />}
+                                <div className="screen md:w-[80%] md:h-[200px] 2xl:h-[300px]">
+                                    <div className={`lcd   ${project.id === "project-5" ? '':'md:w-[190%] md:h-[185%] scale-50 md:origin-top-left overflow-hidden'}`}>
+                                        {project.id === "project-2" ? (
+                                            <iframe title="project 2 content" src={project.url} frameborder="0" width="100%" height="100%"></iframe>
+                                        ) : (
+                                            AnimationComponent && <AnimationComponent />
+                                        )}                                        
                                     </div>
                                     <div className="glass_frame"></div>
                                     <div className="screen_reflection"></div>

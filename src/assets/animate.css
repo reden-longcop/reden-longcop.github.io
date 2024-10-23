@@ -124,12 +124,10 @@
     border-radius: 10px;
     border: 3px solid rgb(58, 70, 92);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-    height: auto;
+    height: fit-content;
     width: 90%;
     position: absolute;
     display: flex;
-    justify-content: start;
-    align-items: center;
     top: 30%;
     left: 50%;
     transform: translate(-50%);
@@ -139,11 +137,10 @@
 }
 
 .container .login-animation-clicker{
-    animation: loginCursor 1s ease-in-out infinite;
+    animation: loginCursor 1s ease-in-out 5s infinite;
 }
 
 .container .login .letter {
-    padding-left: 10px;
     font-weight: bold;
 }
 
@@ -161,7 +158,7 @@
     width: 40%;
     color: white;
     background-color: rgb(58, 70, 92);
-    animation: clickButton 1s ease-in-out infinite;
+    /* animation: clickButton 1s ease-in-out 5s infinite; */
 }
 
 @keyframes clickButton{
@@ -362,6 +359,26 @@
 .wrapper iframe {
     width: 500px;
     height: 500px;
+}
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s infinite normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
