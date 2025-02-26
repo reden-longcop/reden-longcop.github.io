@@ -21,7 +21,7 @@ const Project = () => {
                     tools: 'Python • Pytest • Selenium',
                     feature: 'Multi',
                     caption: 'This Pytest automation script is designed to test key functionalities of a gaming web application, focusing on the Multi and Sidebet features. It includes test cases for core gaming scenarios and offers flexible testing for different game options. Built with Python and Pytest, the project is structured into various components: test scripts for scenarios, modules with non-driver helper functions, and handlers that manage interactions with web elements, APIs, and game-specific tasks.', 
-                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Pytest',
+                    url: 'https://github.com/reden-longcop/Gaming_Automation-Pytest',
                     image: 'AnimateMulti'
                 },
                 { 
@@ -39,7 +39,7 @@ const Project = () => {
                     tools: 'Cypress', 
                     feature: 'Sidebet', 
                     caption: 'This project is a Cypress automation test suite for testing the Sidebet feature of a mobile Vue application. It automates side bet placements on various games, using Node.js and Cypress. The test requires environment variables like authentication headers and game keys. Tests can be run via the Cypress UI or command line, and more tests are planned for future updates.', 
-                    url: 'https://github.com/Code-Me-N0t/Gaming_Automation-Cypress',
+                    url: 'https://github.com/reden-longcop/Gaming_Automation-Cypress',
                     image: 'AnimateSidebar'
                 },
                 { 
@@ -48,7 +48,7 @@ const Project = () => {
                     tools: 'Robot Framework • Selenium',
                     feature: 'Game Navigation',
                     caption: 'This project is a smoke test automation script for a gaming web application built using Robot Framework. It tests core functionalities by utilizing keyword-driven testing, with locators for web elements and variables for credentials. Test cases are written in Gherkin syntax and produce reports in the output folder. The setup includes library imports, setup/teardown configurations, and is executed via Robot Framework’s terminal command.', 
-                    url: 'https://github.com/Code-Me-N0t/Smoke_Testing_Automation-RobotFramework',
+                    url: 'https://github.com/reden-longcop/Smoke_Testing_Automation-RobotFramework',
                     image: 'LoginSection'
                 },
             ]
