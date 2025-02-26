@@ -30,7 +30,7 @@ const Project = () => {
                     tools: 'Javascript • Vite • React Flow', 
                     feature: 'Test Case Visualizer', 
                     caption: 'The Test Flow Manager is a web app built with Vite, React Flow, and JavaScript for visualizing and managing test scenarios using nodes and edges. It helps document test cases by mapping user journeys across project features. Recent updates include Robot Framework integration for test automation and a pie chart modal for visualizing test case statuses. The app features an interactive UI with real-time updates, local save functionality, and uses tools like FontAwesome and React-Toastify to enhance the user experience.',
-                    url: 'https://code-me-n0t.github.io/TestFlowManager/',
+                    url: 'https://reden-longcop.github.io/TestFlowManager/',
                     image: 'AnimateTracking'
                 },
                 { 
