@@ -8,7 +8,7 @@ import useIsVisible from './useIsVisible';
 import '../assets/profile.css'
 
 function Profile() {
-    const resume = "https://drive.google.com/uc?export=download&id=1pW9BbGPdtSHpvhKHom2qZ5IhVCluO2Cw";
+    const resume = "https://drive.google.com/uc?export=download&id=1M5hvGCzQtOl4aV1SYAomPoHEzTdN4LTS";
     const github_link = "https://github.com/Code-Me-N0t";
     const linkedin_link = "https://linkedin.com/in/redenlongcop";
     const emailto_link = "mailto:redenlongcop5@gmail.com";
@@ -32,7 +32,7 @@ function Profile() {
                     transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out'
                 }}
             >
-                <h1 className="sm:text-6xl md:text-7xl md:pt-5 2xl:text-9xl">REDEN LONGCOP</h1>
+                <h1 className="sm:text-6xl md:text-7xl md:pt-5 2xl:text-[7rem]">REDEN LONGCOP</h1>
                 <h3>QA Engineer | QA Tester</h3>
                 <div className="icons md:space-x-6 space-x-3">
                     <a href={linkedin_link} className="icon-link"><FontAwesomeIcon className="linkedin icon" icon={faLinkedin} /></a>

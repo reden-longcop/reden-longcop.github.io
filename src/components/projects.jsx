@@ -16,13 +16,13 @@ const Project = () => {
             id: 1,
             projects: [
                 { 
-                    name: 'Web Game Automation', 
+                    name: 'Property Listing Automation', 
                     id: 'project-1', 
-                    tools: 'Python • Pytest • Selenium',
-                    feature: 'Multi',
-                    caption: 'This Pytest automation script is designed to test key functionalities of a gaming web application, focusing on the Multi and Sidebet features. It includes test cases for core gaming scenarios and offers flexible testing for different game options. Built with Python and Pytest, the project is structured into various components: test scripts for scenarios, modules with non-driver helper functions, and handlers that manage interactions with web elements, APIs, and game-specific tasks.', 
-                    url: 'https://github.com/reden-longcop/Gaming_Automation-Pytest',
-                    image: 'AnimateMulti'
+                    tools: 'Robot Framework • Selenium', 
+                    feature: 'Real Estate Website', 
+                    caption: 'This project is a comprehensive test automation suite designed for the Bah.Ai property listing web application. Built using the Robot Framework, it enables robust cross-browser testing across Chrome, Firefox, and Safari, ensuring consistent user experience and functionality. The framework leverages Selenium for browser automation and integrates seamlessly with GitHub Actions for continuous integration and delivery (CI/CD). Automated test execution results are visualized through a custom HTML dashboard, with detailed reports and logs published to GitHub Pages for easy access and monitoring. The project structure is organized for maintainability, separating test cases, shared resources, and results, and includes support for real-time analytics and historical data tracking. This setup empowers teams to maintain high quality standards, with automated quality gates and full regression and smoke test coverage, making it a reliable foundation for ongoing development and deployment of the Bah.Ai platform.', 
+                    url: 'https://github.com/reden-longcop/property-listing-web-automation.git',
+                    image: 'AnimateSidebar'
                 },
                 { 
                     name: 'Test Flow Manager', 
@@ -34,23 +34,32 @@ const Project = () => {
                     image: 'AnimateTracking'
                 },
                 { 
-                    name: 'Web Game Automation', 
+                    name: 'Mobile Automation', 
                     id: 'project-3', 
-                    tools: 'Cypress', 
-                    feature: 'Sidebet', 
-                    caption: 'This project is a Cypress automation test suite for testing the Sidebet feature of a mobile Vue application. It automates side bet placements on various games, using Node.js and Cypress. The test requires environment variables like authentication headers and game keys. Tests can be run via the Cypress UI or command line, and more tests are planned for future updates.', 
-                    url: 'https://github.com/reden-longcop/Gaming_Automation-Cypress',
-                    image: 'AnimateSidebar'
+                    tools: 'Robot Framework • Appium',
+                    feature: 'Mobile App',
+                    caption: 'This project is a comprehensive mobile automation testing framework designed for both iOS and Android applications. It leverages the Robot Framework and Appium to enable cross-platform automated testing. The framework features automatic detection of application files (both .app for iOS and .apk for Android), robust evidence collection (including screenshots and screen recordings), and modular organization using the Page Object Model for maintainable test code. It supports data-driven testing, parallel execution, and provides utilities for emulator management, device location simulation, and Appium server control. The project is structured for easy configuration and extensibility, making it suitable for teams aiming to automate mobile app testing efficiently and with clear, organized test artifacts.', 
+                    url: 'https://github.com/reden-longcop/mobile-automation.git',
+                    image: 'AnimateMulti'
                 },
                 { 
-                    name: 'Smoke Testing Automation', 
+                    name: 'Medical Supply Chain Automation', 
                     id: 'project-5',
-                    tools: 'Robot Framework • Selenium',
-                    feature: 'Game Navigation',
-                    caption: 'This project is a smoke test automation script for a gaming web application built using Robot Framework. It tests core functionalities by utilizing keyword-driven testing, with locators for web elements and variables for credentials. Test cases are written in Gherkin syntax and produce reports in the output folder. The setup includes library imports, setup/teardown configurations, and is executed via Robot Framework’s terminal command.', 
-                    url: 'https://github.com/reden-longcop/Smoke_Testing_Automation-RobotFramework',
-                    image: 'LoginSection'
+                    tools: 'Robot Framework • Selenium • Appium',
+                    feature: 'Web and Mobile App',
+                    caption: 'This automation project provides a robust end-to-end testing framework for a medical supply chain application, covering both web and mobile platforms. Built using the Robot Framework, it features modular test cases, reusable page objects, and centralized variable management for locators and credentials, ensuring maintainability and scalability. The framework supports comprehensive test coverage, with detailed execution reports and screenshots generated for each test run to facilitate efficient debugging and quality assurance. Containerization via Docker guarantees a consistent testing environment across different systems. This setup enables seamless integration of automated testing into the development lifecycle, enhancing the reliability and performance of the medical supply chain application.', 
+                    url: 'https://github.com/reden-longcop/medical-supply-chain-web-and-mobile-automation.git',
+                    image: 'AnimateTracking'
                 },
+                { 
+                    name: 'Gaming Automation', 
+                    id: 'project-3', 
+                    tools: 'Pytest • Selenium',
+                    feature: 'Multi',
+                    caption: 'This Pytest automation script is designed to test key functionalities of a gaming web application, focusing on the Multi and Sidebet features. It includes test cases for core gaming scenarios and offers flexible testing for different game options. Built with Python and Pytest, the project is structured into various components: test scripts for scenarios, modules with non-driver helper functions, and handlers that manage interactions with web elements, APIs, and game-specific tasks.', 
+                    url: 'https://github.com/reden-longcop/Gaming_Automation-Pytest',
+                    image: 'AnimateMulti'
+                }
             ]
         },
     ];

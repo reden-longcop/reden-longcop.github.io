@@ -17,7 +17,7 @@ function Contact() {
                         </li>
                         <li>
                             <FontAwesomeIcon icon={faGithub} />
-                            <a href="https://github.com/Code-Me-N0t"> github.com/Code-Me-N0t</a>
+                            <a href="https://github.com/reden-longcop"> github.com/reden-longcop</a>
                         </li>
                         <li>
                             <FontAwesomeIcon icon={faEnvelope} />

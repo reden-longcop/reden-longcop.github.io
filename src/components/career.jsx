@@ -6,10 +6,10 @@ const Timeline = () => {
     const timelineData = [
         {
             direction: 'direction-l',
-            flag: 'Associate QA Engineer',
+            flag: 'Automation QA Engineer',
             position: 'Amihan Global Strategies, Phils, Inc.',
             time: 'November 2024 - Present',
-            description: 'Reviews and validates requirements and technical specs. Develops and runs test plans and detailed test cases based on requirements and customer feedback. Provides insights or suggestions after analyzing test results and overall product quality. Works with the development team to verify bug fixes, conduct validation, and perform regression testing. Manages testing efforts across multiple projects while meeting tight deadlines.'
+            description: 'As an Associate QA Automation Engineer, I design, develop, and maintain robust test automation frameworks using Python and Robot Framework for both web (Selenium) and mobile (Appium) applications. I create and optimize test cases and scripts to maximize coverage and streamline regression testing, while leading automation initiatives to enhance scalability and reliability across projects. My work includes developing custom utilities—such as automated Appium server/emulator setups and cross-browser testing pipelines—and integrating CI/CD systems to automate test execution, generate consolidated reports, and publish dashboards (e.g., GitHub Pages) for team transparency. Additionally, I mentor QA team members in automation best practices and collaborate with DevOps/SDET teams to refine continuous testing and deployment workflows, ensuring seamless integration of quality assurance into the development lifecycle.'
         },
         {
             direction: 'direction-r',
